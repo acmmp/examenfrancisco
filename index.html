@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Desarrollo de Interfaces Web ADRIAN CAMPAYO</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="menu">
+        <img class="logo" src="img/images.png" width="200" height="200"></i></a>
+    
+        <a href="#">Listado de entradas</a>
+        <a href="#">Nueva entrada</a>
+        <a href="#">Clientes</a>
+        <a href="#">Herramientas</a>
+    
+        <div class="separador"></div>
+    <br>
+        <a href="#">Salir</a>
+    </div>
+
+    
+    
+
+    
+    
+    <div class="container">
+        <h1>Listado de entradas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matricula</th>
+                    <th>Modelo</th>
+                    <th>Cliente</th>
+                    <th>Fecha de entrada</th>
+                    <th>Fecha de salida</th>
+                    <th>Tarifa</th>
+                    <th>Coste total</th>
+                    <th>Acciones</th>
+                </tr>
+
+
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ABC123</td>
+                    <td>Toyota Camry</td>
+                    <td> Juan Pérez</td>
+                    <td> 2023-01-05</td>
+                    <td>2023-01-10</td>
+                    <td><button class="custom-button" onclick="mostrarVentana('ABC123')">Estándar</button></td>                    
+                    <td>250€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+                </tr>
+                <tr>
+                    <td>XYZ789</td>
+                    <td>Honda Civic</td>
+                    <td>Maria Rodríguez</td>
+                    <td> 2023-02-12</td>
+                    <td> 2023-02-18</td>
+                    <td><button class="custom-button" onclick="mostrarVentana('XYZ789')" >Premium</button></td>
+                    <td> 280€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+
+                <tr>
+                    <td> DEF456</td>
+                    <td> Ford Mustang</td>
+                    <td> Carlos Gómez</td>
+                    <td> 2023-03-20</td>
+                    <td> 2023-03-25</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('DEF456')"> Oferta</button></td>
+                    <td> 350€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                <tr>
+
+                    <td> GHI789</td>
+                    <td>Chevrolet Malibu</td>
+                    <td>Ana López</td>
+                    <td> 2023-04-08</td>
+                    <td> 2023-04-15</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('GHI789')"> Estándar</button></td>
+                    <td> 385€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+                <tr>
+                    <td>JKL012</td>
+                    <td> Nissan Altima</td>
+                    <td> Luis García</td>
+                    <td> 2023-05-14</td>
+                    <td> 2023-05-20</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('JKL012')"> Premium</button></td>
+                    <td> 270€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+                <tr>
+                    <td> MNO345</td>
+                    <td> Hyundai Sonata</td>
+                    <td> Sofía Martinez</td>
+                    <td> 2023-06-02</td>
+                    <td> 2023-06-08</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('MNO345')"> Estándar</button></td>
+                    <td> 288€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+                <tr>
+                    <td> PQR678</td>
+                    <td> Kia Forte</td>
+                    <td> Pedro Sánchez</td>
+                    <td> 2023-07-11</td>
+                    <td> 2023-07-18</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('PQR678')"> Oferta</button></td>
+                    <td> 294€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+                <tr>
+                    <td> STU901</td>
+                    <td>Subaru Outback</td>
+                    <td> Marta Torres</td>
+                    <td> 2023-08-19</td>
+                    <td> 2023-08-25</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('STU901')"> Premium</button></td>
+                    <td> 360€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+
+                <tr>
+                    <td> VWX234</td>
+                    <td> Mercedes-Benz C-Class</td>
+                    <td> Ricardo Vargas</td>
+                    <td> 2023-09-27</td>
+                    <td> 2023-10-03</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('VWX234')"> Estándar</button></td>
+                    <td> 480€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+                <tr>
+                    <td>YZA567</td>
+                    <td> Audi A4</td>
+                    <td> Isabel López</td>
+                    <td> 2023-11-05</td>
+                    <td> 2023-11-12</td>
+                    <td><button class="custom-button"onclick="mostrarVentana('YZA567')"> Oferta</button></td>
+                    <td> 525€</td>
+                    <td><button onclick="mostrarConfirmacionBorrar()">borrar</button></td>
+
+                </tr>
+            </tbody>
+        </table>
+        <h3>Creado por Adrian Campayo Martin</h3>
+    </div>
+
+
+    <script src="/static/app.js"></script>
+
+    
+
+    </body>
+
+    </html>
+
+
